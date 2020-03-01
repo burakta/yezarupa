@@ -1,0 +1,11 @@
+version: '2'
+services:
+  yezarupa-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/yezarupa/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=yezarupa
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

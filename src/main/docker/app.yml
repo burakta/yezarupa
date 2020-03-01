@@ -1,0 +1,27 @@
+version: '2'
+services:
+  yezarupa-app:
+    image: yezarupa
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://yezarupa-postgresql:5432/yezarupa
+      - JHIPSTER_CACHE_REDIS_SERVER=redis://yezarupa-redis:6379
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+      - SPRING_DATA_JEST_URI=http://yezarupa-elasticsearch:9200
+      - SPRING_ELASTICSEARCH_REST_URIS=http://yezarupa-elasticsearch:9200
+    ports:
+      - 8080:8080
+  yezarupa-postgresql:
+    extends:
+      file: postgresql.yml
+      service: yezarupa-postgresql
+  yezarupa-redis:
+    extends:
+      file: redis.yml
+      service: yezarupa-redis
+  yezarupa-elasticsearch:
+    extends:
+      file: elasticsearch.yml
+      service: yezarupa-elasticsearch

@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.zarupa.yezarupa",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "monolith",
+    "baseName": "yezarupa",
+    "packageName": "com.zarupa.yezarupa",
+    "packageFolder": "com/zarupa/yezarupa",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "redis",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "Yzk3ODdiYTZiNDc2MTRkMzFmYmMxMTBmMWQxYTY5ODVkYmRjYjgwYzI0ZGE3ZjgyMjlmMTNiNzZkNDc5YTZmNDk0MzQyZTdmM2JhNWUzNTg4Nzk3YWMzNzc1MzUzOTMyMDcyZDE2MGFmYTFmZWY4NTczZWRlYjk0ODM0YTlmMDI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1583062472659,
+    "testFrameworks": ["gatling", "cucumber"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "de", "tr"],
+    "blueprints": []
+  }
+}
